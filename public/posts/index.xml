@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on MarekOnd</title>
-    <link>https://examplesite.com/posts/</link>
+    <link>https://marekond.github.io/posts/</link>
     <description>Recent content in Posts on MarekOnd</description>
     <image>
       <title>MarekOnd</title>
@@ -12,13 +12,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Mar 2024 17:32:59 +0100</lastBuildDate>
-    <atom:link href="https://examplesite.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://marekond.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First post</title>
-      <link>https://examplesite.com/posts/first_post/</link>
+      <link>https://marekond.github.io/posts/first_post/</link>
       <pubDate>Sat, 30 Mar 2024 17:32:59 +0100</pubDate>
-      <guid>https://examplesite.com/posts/first_post/</guid>
-      <description>$$ e = \sum_{n=0}^\infty \frac{1}{n!} $$</description>
+      <guid>https://marekond.github.io/posts/first_post/</guid>
+      <description>$$ e = \sum_{n=0}^\infty \frac{1}{n!} $$
+This is a warning This is a note which is not being built (one with %% around instead of &lt;&gt; doesn&#39;t work for some reason) A useful tip! A useful tip! An extract of Game of Life on GPU code
+@cuda.jit def update_board(gridInput:np.ndarray, gridOutput:np.ndarray): x,y = cuda.grid(2) if x &amp;lt; gridInput.shape[0] and y &amp;lt; gridInput.shape[1]: z = 0 val = 0 # go through all the neigbouring cells and add 1 for each life while z &amp;lt; VECTORS.</description>
     </item>
   </channel>
 </rss>

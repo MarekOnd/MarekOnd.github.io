@@ -1,0 +1,38 @@
+.chroma {
+  background-color: unset;
+}
+.danger,
+.note,
+.warning,
+.tip {
+  border-left-style: solid;
+  border-left-width: 0.4rem;
+  margin-left: 0;
+  > p {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.warning {
+  border-left-color: #ffbb00;
+}
+
+.note {
+  border-left-color: #0000ee;
+}
+
+.danger {
+  border-left-color: #ee0000;
+}
+
+.tip{
+  border-left-color: #42b400;
+}
+
+body.colorscheme-dark svg {
+  filter: invert(1);
+}
+
+.block-icon{
+  display: relative;
+}

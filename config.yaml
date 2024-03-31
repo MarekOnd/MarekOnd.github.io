@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://marekond.github.io/"
 title: MarekOnd
 paginate: 5
 theme: PaperMod
@@ -30,7 +30,7 @@ params:
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
@@ -42,17 +42,18 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: false
+  
 
   
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "https://github.com/MarekOnd.png"
+    favicon16x16: "https://github.com/MarekOnd.png"
+    favicon32x32: "https://github.com/MarekOnd.png"
+    apple_touch_icon: "https://github.com/MarekOnd.png"
+    safari_pinned_tab: "https://github.com/MarekOnd.png"
 
   label:
     text: "Home"
@@ -92,7 +93,7 @@ params:
     hidden: false # hide everywhere but not in structured data
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
-    responsiveImages: true
+    responsiveImages: false
 
   editPost:
     URL: "https://github.com/MarekOnd/content"
@@ -140,11 +141,19 @@ menu:
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
-    anchorLineNos: true
+    # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: true
+    lineNos: false
+    # noClasses: false
+    style: monokai
+python:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: false
     style: monokai
 
 
@@ -153,3 +162,15 @@ outputs:
     - HTML
     - RSS
     - JSON
+    
+goldmark:
+  parser:
+    unsafe: true
+    attribute:
+      block: true
+tableOfContents:
+  endLevel: 5
+  ordered: false
+  startLevel: 2
+security:
+  enableInlineShortcodes: true

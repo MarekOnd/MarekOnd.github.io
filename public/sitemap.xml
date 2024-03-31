@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://marekond.github.io/</loc>
     <lastmod>2024-03-30T18:13:14+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/links/</loc>
+    <loc>https://marekond.github.io/links/</loc>
     <lastmod>2024-03-30T18:13:14+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/first_post/</loc>
+    <loc>https://marekond.github.io/posts/first_post/</loc>
     <lastmod>2024-03-30T17:32:59+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://marekond.github.io/posts/</loc>
     <lastmod>2024-03-30T17:32:59+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://marekond.github.io/tags/</loc>
     <lastmod>2024-03-30T17:32:59+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/test/</loc>
+    <loc>https://marekond.github.io/tags/test/</loc>
     <lastmod>2024-03-30T17:32:59+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/about/</loc>
+    <loc>https://marekond.github.io/about/</loc>
     <lastmod>2024-03-30T11:01:59+01:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/archives/</loc>
+    <loc>https://marekond.github.io/archives/</loc>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://marekond.github.io/categories/</loc>
   </url><url>
-    <loc>https://examplesite.com/search/</loc>
+    <loc>https://marekond.github.io/search/</loc>
   </url>
 </urlset>
