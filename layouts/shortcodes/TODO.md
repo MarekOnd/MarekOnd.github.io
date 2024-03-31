@@ -1,0 +1,1 @@
+- create floating image shortcode (to have images on the sides of the page)

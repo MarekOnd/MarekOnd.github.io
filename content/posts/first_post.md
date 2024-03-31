@@ -13,7 +13,7 @@ e = \sum_{n=0}^\infty \frac{1}{n!}
 $$
 
 {{<warning>}}
-This is a warning
+This is a warning.
 {{</warning>}}
 
 {{<note>}}
@@ -25,7 +25,7 @@ A useful tip!
 {{</tip>}}
 
 {{<danger>}}
-A useful tip!
+Beware this.
 {{</danger>}}
 
 An extract of Game of Life on GPU code

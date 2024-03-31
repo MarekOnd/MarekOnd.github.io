@@ -6,10 +6,17 @@
 .warning,
 .tip {
   border-left-style: solid;
+  border-bottom-left-radius: 0.7rem;
   border-left-width: 0.4rem;
+  /*border-right-style: solid;
+  border-top-right-radius: 1rem;
+  border-right-width: 0.4rem;*/
   margin-left: 0;
   > p {
-    padding: 0.5rem 1rem;
+    top: -0rem;
+    position: relative;
+    padding: 0.0rem 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -29,10 +36,7 @@
   border-left-color: #42b400;
 }
 
-body.colorscheme-dark svg {
-  filter: invert(1);
-}
-
 .block-icon{
-  display: relative;
+  display: block;
+  pointer-events: none;
 }
