@@ -1,6 +1,8 @@
 .chroma {
   background-color: unset;
 }
+
+/* Blocks similar to markdown extension */
 .danger,
 .note,
 .warning,
@@ -39,4 +41,38 @@
 .block-icon{
   display: block;
   pointer-events: none;
+}
+
+/* Blocks for mathematics */
+.theorem,
+.lemma,
+.definition,
+.proof {
+  border-left-style: solid;
+  border-bottom-left-radius: 0.0rem;
+  border-left-width: 0.8rem;
+  margin-left: 0;
+  > p {
+    top: -0rem;
+    position: relative;
+    padding: 0.0rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.theorem{
+  border-left-color: rgb(205, 255, 24);
+}
+
+.lemma{
+  border-left-color: rgb(195, 0, 255);
+}
+
+.definition{
+  border-left-color: rgb(0, 255, 242);
+}
+
+.proof{
+  border-left-color: rgb(255, 187, 0);
 }

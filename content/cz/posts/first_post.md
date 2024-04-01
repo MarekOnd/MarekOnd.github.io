@@ -1,5 +1,5 @@
 ---
-title: "First post"
+title: "První zpráva"
 date: 2024-03-30T17:32:59+01:00
 tags: ['test']
 cover:
@@ -7,28 +7,29 @@ cover:
     alt: "Mandelbrot set"
     caption: "Mandelbrot set"
     relative: false
+showtoc: false
 ---
 $$
 e = \sum_{n=0}^\infty \frac{1}{n!}
 $$
 
 {{<warning>}}
-This is a warning.
+Toto je varování.
 {{</warning>}}
 
 {{<note>}}
-This is a note which is not being built (one with %% around instead of <> doesn't work for some reason)
+Toto je poznámka.
 {{</note>}}
 
 {{<tip>}}
-A useful tip!
+Toto je užitečný tip!
 {{</tip>}}
 
 {{<danger>}}
-Beware this.
+Obávej se tohohle.
 {{</danger>}}
 
-An extract of Game of Life on GPU code
+Extrakt z kódu Hry života v Pythonu
 
 ```python
 @cuda.jit
@@ -59,3 +60,21 @@ def update_board(gridInput:np.ndarray, gridOutput:np.ndarray):
 ```
 
 {{<youtube d6iQrh2TK98>}}
+
+## Matematické bloky
+
+{{<definition "Tvrzení">}}
+Tvrzení je výrok, který je buď pravdivý nebo nepravdivý.
+{{</definition>}}
+
+{{<lemma "Zakladní pozorování">}}
+Tvrzení je pravdivé $\Rightarrow$ je pravdivé
+{{</lemma>}}
+
+{{<theorem "Co je pravda">}}
+Tvrzení je pravdivé $\Leftrightarrow$ je pravdivé
+{{</theorem>}}
+
+{{<proof>}}
+$\square$
+{{</proof>}}

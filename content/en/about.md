@@ -7,7 +7,7 @@ params:
     showToc: false
 ---
 
-Hi, I am a bachelor student at Czech Technical University (CTU) in Prague. In my free time I like work on various projects (just like this one).
+Hi, I am a bachelor student at the Faculty of Nuclear Sciences of the Czech Technical University (CTU) in Prague. In my free time I like work on various projects (just like this one).
 
 ## Education
 
@@ -16,6 +16,7 @@ Bachelor of Mathematical Engineering <br />
 <i>Specialization in Mathematical Modelling</i> <br />
 <b><a href="https://www.fjfi.cvut.cz/en/">FNSPE CTU</a></b>
 {{</coverline>}}
+
 {{<coverline "2017 - 2021">}}
 High school education <br/>
 <i>Focus on mathematics</i> <br/>
@@ -23,6 +24,7 @@ High school education <br/>
 {{</coverline>}}
 
 ## Work experience
+
 {{<coverline "2021,2022,2023">}}
 Chairman/Deputy Chairman/Member of a state election comitee <br />
 {{</coverline>}}
@@ -58,23 +60,26 @@ Interests:
 {{<onecoverline "Native tongue" Czech>}}
 {{<onecoverline "Advanced" "English - C1 certificate">}}
 {{<onecoverline "Basics" German>}}
- 
+
 ### Programming Languages
 
-{{<onecoverline Advanced "Python">}}
-{{<onecoverline Intermediate "C++">}}
+{{<onecoverline Advanced "Python, C++">}}
 {{<onecoverline Basics "JavaScript, Typescript, Matlab, C#">}}
+
+### Other languages
+
+{{<onecoverline Advanced "LaTeX">}}
+{{<onecoverline Basics "HTML, CSS, HUGO, Tailwind.css">}}
 
 ### Other
 
-{{<onecoverline Advanced "LaTeX">}}
-{{<onecoverline Intermediate "HTML, CSS">}}
-{{<onecoverline Basics "HUGO, Tailwind.css">}}
+- Basics of MS Office
+- Attended a seminar in rhetorics
+- Teamwork from school projects
 
 ## Interests
 
 - Maths and Physics
-- Making of various apps and games
+- Making of various apps and games (e.g. [SquardleCZ](https://marekond.github.io/SquardleCZ/))
 - Board and computer games
-- Word games (see [SquardleCZ](https://marekond.github.io/SquardleCZ/))
 - Books - fantasy, sci-fi
