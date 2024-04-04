@@ -37,7 +37,7 @@ Internship at <a href="https://www.eli-beams.eu/cs/">Extreme Light Infrastructur
 
 ## Research
 
-I am currently finishing my bachelor thesis with the topic *Mathematical modelling of compressible two-dimensional fluid flow using lattice Boltzmann method*.
+I am currently finishing my bachelor's project with the topic *Mathematical modelling of compressible two-dimensional fluid flow using lattice Boltzmann method*.
 
 Interests:
 

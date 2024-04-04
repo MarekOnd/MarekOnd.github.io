@@ -18,8 +18,15 @@ This is a warning.
 {{</warning>}}
 
 {{<note>}}
-This is a note which is not being built (one with %% around instead of <> doesn't work for some reason)
+This is a note which is not being built as markdown (one with %% around instead of <> doesn't work for some reason)
 {{</note>}}
+{{<note>}}
+UPDATE: it is now being **built** as markdown because of an argument `| markdownify`.
+{{</note>}}
+{{<danger>}}
+UPDATE: But this removes the ability to have more a shortcode in a shortcode.
+{{</danger>}}
+
 
 {{<tip>}}
 A useful tip!
