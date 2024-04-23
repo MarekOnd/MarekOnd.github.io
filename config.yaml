@@ -1,7 +1,12 @@
 baseURL: "https://marekond.github.io/"
 title: MarekOnd
 paginate: 5
-theme: PaperMod
+theme: ["hugo-embed-pdf-shortcode", "PaperMod"]
+
+
+
+
+enableInlineShortcodes: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -140,6 +145,9 @@ menu:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     # anchorLineNos: true
     codeFences: true
@@ -235,3 +243,5 @@ languages:
       subtitle: Projects, blog
     title: MarekOnd
     weight: 1
+
+    

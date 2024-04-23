@@ -1,7 +1,8 @@
 ---
 title: "Siunitx_tables"
 date: 2024-04-04T20:14:02+02:00
-draft: true
+draft: false
+tags: ['latex','notes']
 ---
 
 ## Example
@@ -25,7 +26,7 @@ An *siunitx* table for a experimental order of convergence summary can look like
         S[table-format = 2.3]
         }
         \toprule
-         {res} & {$\delta_x$ [\unit{\metre}]} & {$E_{\delta_x}^{(1)}$} & {$\mathrm{EOC}_1$}\\
+         {resolution} & {$\delta_x$ [\unit{\metre}]} & {$E_{\delta_x}^{(1)}$} & {$\mathrm{EOC}_1$}\\
         \midrule[\heavyrulewidth]
         60 $\times$ 32 & 6.666667000e-02 & 1.663076419e-03 & \\
         124 $\times$ 64 & 3.225806000e-02 & 3.875007840e-04 & 2.006656460e+00\\
@@ -34,18 +35,47 @@ An *siunitx* table for a experimental order of convergence summary can look like
 \end{table}
 ```
 
-Whole `.tex` file can look like this
+A `.tex` file which generates a standalone `.pdf` file of the table can look like this
 
 ```tex
-\documentclass{article}
+\documentclass[12,a4paper]{standalone}
 
 \usepackage{siunitx}
 \usepackage{booktabs}
+\usepackage{caption}
 
 \begin{document}
-% table here
+\minipage{1.08\textwidth}
+\addtolength{\tabcolsep}{-1.0pt}
+    \centering
+    \sisetup{
+        separate-uncertainty = true,
+        table-alignment-mode=marker,
+        round-mode=places,
+        round-precision=3,
+        scientific-notation=true}
+    \begin{tabular}{
+        S[table-format=0.0, scientific-notation=false, round-mode=none]
+        S[table-format = 2.3e1]
+        S[table-format = 2.3e1]
+        S[table-format = 2.3e1]
+        S[table-format = 2.3]
+        }
+        \toprule
+         {resolution} & {$\delta_x$ [\unit{\metre}]} & {$E_{\delta_x}^{(1)}$} & {$\mathrm{EOC}_1$}\\
+        \midrule[\heavyrulewidth]
+        60 $\times$ 32 & 6.666667000e-02 & 1.663076419e-03 & \\
+        124 $\times$ 64 & 3.225806000e-02 & 3.875007840e-04 & 2.006656460e+00\\
+        252 $\times$ 128 & 1.587302000e-02 & 9.181369774e-05 & 2.030546734e+00\\
+    \end{tabular}
+    \captionof{table}{Basic table with siunitx}
+\endminipage
 \end{document}
 ```
+and generates
+
+{{<embed-pdf url="/siunitx_basic_table.pdf" hidePaginator="true" hideLoader="true">}}
+
 
 ## Explanation of arguments
 
@@ -65,3 +95,7 @@ The parameter `scientific-notation` has to be turned of to display integers in n
 {{<warning>}}
 The first row needs to have each element enclose in curly brackets `{}` so that it doesn`t register as a number which should be formatted.
 {{</warning>}}
+
+{{<note>}}
+TODO: find a better way to center first column around $\times$ symbol (size of the numbers after $\times$ is not taken to account when creating table)
+{{</note>}}
