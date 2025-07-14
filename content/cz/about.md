@@ -11,7 +11,12 @@ Ahoj, jsem student na FJFI ČVUT. Ve svém volném čase se rád věnuji různor
 
 ## Vzdělání
 
-{{<coverline "2021 - now">}}
+{{<coverline "2024 - dodnes">}}
+magisterský obor Matematické inženýrství<br />
+<b><a href="https://www.fjfi.cvut.cz/en/">Fakulta jaderná a fyzikálně inženýrská Českého vysokého učení technického v Praze</a></b>
+{{</coverline>}}
+
+{{<coverline "2021 - 2024">}}
 bakalářský obor Matematické inženýrství<br />
 <i>specializace Matematické modelování</i> <br />
 <b><a href="https://www.fjfi.cvut.cz/en/">Fakulta jaderná a fyzikálně inženýrská Českého vysokého učení technického v Praze</a></b>
@@ -31,21 +36,18 @@ Téma: <i>Data acquisition and experiment control at AMO station</i><br />
 <b>v Dolních Břežanech</b>
 {{</coverline>}}
 
-{{<coverline "2021,2022,2023">}}
+{{<coverline "2021,2022,2023,2024">}}
 Předseda/Místopředseda/Člen státní volební komise <br />
 <b>okres Praha 5</b>
 {{</coverline>}}
 
 ## Výzkum
 
-Aktuálně dokončuji svou bakalářskou práci na téma *Matematické modelování stlačitelného dvourozměrného proudění tekutin pomocí mřížkové Boltzmannovy metody*.
-
 Témata zájmu:
 
-- výpočetní dynamika tekutin
+- výpočetní dynamika tekutin (Boltzmannova mřížková metoda)
 - buněčné automaty
 - fraktály
-- markovovy řetězce
 
 ## Dovednosti
 
@@ -53,7 +55,7 @@ Témata zájmu:
 
 - vědomosti z teoretické a aplikované matematiky
 - analytické myšlení
-- zkušenosti s analýzou dat (ze stáže v ELI)
+- zkušenosti s analýzou dat
 - programování
 
 ### Jazyky
@@ -65,16 +67,23 @@ Témata zájmu:
 ### Programovací jazyky
 
 {{<onecoverline pokročilý "Python, C++">}}
-{{<onecoverline základy "JavaScript, Typescript, Matlab, C#">}}
+{{<onecoverline středně pokročilý "CUDA">}}
+{{<onecoverline základy "JavaScript, Typescript, Matlab">}}
 
 ### Ostatní jazyky
 
 {{<onecoverline pokročilý "LaTeX">}}
-{{<onecoverline základy "HTML, CSS, HUGO, Tailwind.css">}}
+{{<onecoverline základy "HTML, CSS, HUGO">}}
+
+### Software
+
+- MS Office
+- Linux (Ubuntu, Fedora, Arch)
+- Blender, Inkscape, GIMP
+- GODOT
 
 ### Ostatní
 
-- základy MS Office
 - absolvování rétorického semináře
 - schopnost týmová práce ze školních projektů
 

@@ -1,8 +1,8 @@
 baseURL: "https://marekond.github.io/"
 title: MarekOnd
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: ["hugo-embed-pdf-shortcode", "PaperMod"]
-
 
 
 
