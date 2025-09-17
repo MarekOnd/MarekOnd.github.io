@@ -1,0 +1,11 @@
+<!-- This is for long continous notes 
+shortcode works even though the color argument passing method is highlighted 
+-->
+<div class="colsection" style="border-left-color: {{.Get "color"}};">
+    <details>
+    <p class="dropdown-header">
+        <div style="font-style: italic;display:inline"> {{.Get 0}} </div>
+    </p>
+    <p>{{.Inner | markdownify}}</p>
+    </details>
+</div>
