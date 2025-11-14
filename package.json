@@ -1,0 +1,10 @@
+{
+  "name": "marekond-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hugo build marekond.github.io",
+    "start": "hugo server"
+  },
+  "devDependencies": {}
+}
