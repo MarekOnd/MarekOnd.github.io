@@ -1,5 +1,10 @@
 {
-  "name": "hugo-site",
+  "name": "marekond-blog",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "start": "hugo server"
+  },
+  "devDependencies": {}
 }
