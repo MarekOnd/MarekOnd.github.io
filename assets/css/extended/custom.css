@@ -76,3 +76,17 @@
 .proof{
   border-left-color: rgb(255, 187, 0);
 }
+
+.colsection {
+  border-left-style: solid;
+  border-bottom-left-radius: 0.0rem;
+  border-left-width: 0.2rem;
+  margin-left: 0;
+  padding-left: 0.2rem;
+  > p {
+    top: -0rem;
+    position: relative;
+    padding: 0.0rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
