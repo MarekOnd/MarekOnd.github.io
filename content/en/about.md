@@ -7,7 +7,7 @@ params:
     showToc: false
 ---
 
-Hi, I am a bachelor student at the Faculty of Nuclear Sciences of the Czech Technical University (CTU) in Prague. In my free time I like to work on various projects (just like this one).
+Hi, I am a student at the Faculty of Nuclear Sciences of the Czech Technical University (CTU) in Prague. In my free time I like to work on various projects (just like this one).
 
 ## Education
 
