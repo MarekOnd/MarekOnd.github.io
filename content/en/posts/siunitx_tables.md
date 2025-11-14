@@ -1,13 +1,18 @@
 ---
-title: "Siunitx_tables"
+title: "EOC table with siunitx"
 date: 2024-04-04T20:14:02+02:00
 draft: false
 tags: ['latex','notes']
+cover:
+    image: "/posts/siunitx/siunitx-basic-table.png"
+    alt: "Table preview"
+    caption: "Table preview"
+    relative: false
 ---
 
 ## Example
 
-An *siunitx* table for a experimental order of convergence summary can look like this.
+An *siunitx* table for the experimental order of convergence (EOC) summary can look like this.
 
 ```tex
 \begin{table}
@@ -74,7 +79,9 @@ A `.tex` file which generates a standalone `.pdf` file of the table can look lik
 ```
 and generates
 
-{{<embed-pdf url="/siunitx_basic_table.pdf" hidePaginator="true" hideLoader="true">}}
+
+{{<figure src="/posts/siunitx/siunitx-basic-table.png">}}
+<!--{{<embed-pdf url="/siunitx_basic_table.pdf" hidePaginator="true" hideLoader="true">}} old version with pdf-->
 
 
 ## Explanation of arguments
