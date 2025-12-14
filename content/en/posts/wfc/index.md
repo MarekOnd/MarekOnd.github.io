@@ -4,7 +4,7 @@ date: 2025-09-17T19:44:29+02:00
 draft: false
 cover:
     image: "result.png"
-    alt: "Result example with"
+    alt: "Result example"
     caption: "Result example"
     relative: false
 ---
