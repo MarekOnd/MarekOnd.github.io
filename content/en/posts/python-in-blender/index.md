@@ -3,7 +3,7 @@ title: "Python in Blender with packages"
 date: 2025-07-16T08:08:06+02:00
 draft: false
 cover:
-    image: "/posts/python-in-blender/brno-osmnx-render.png"
+    image: "brno-osmnx-render.png"
     alt: "Render of the road network of Brno"
     caption: "Render of the road network of Brno"
     relative: false

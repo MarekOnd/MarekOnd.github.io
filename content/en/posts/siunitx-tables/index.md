@@ -4,7 +4,7 @@ date: 2024-04-04T20:14:02+02:00
 draft: false
 tags: ['latex','notes']
 cover:
-    image: "/posts/siunitx/siunitx-basic-table.png"
+    image: "siunitx-basic-table.png"
     alt: "Table preview"
     caption: "Table preview"
     relative: false
@@ -80,7 +80,7 @@ A `.tex` file which generates a standalone `.pdf` file of the table can look lik
 and generates
 
 
-{{<figure src="/posts/siunitx/siunitx-basic-table.png">}}
+{{<figure src="siunitx-basic-table.png">}}
 <!--{{<embed-pdf url="/siunitx_basic_table.pdf" hidePaginator="true" hideLoader="true">}} old version with pdf-->
 
 
