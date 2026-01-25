@@ -1,11 +1,11 @@
 ---
-title: "Eli"
+title: "Internship at ELI: Beamlines"
 date: 2026-01-24T13:20:53+01:00
-draft: true
+draft: false
 cover:
     image: "eVMI_pattern.png"
     alt: ""
-    caption: "Generated distribution of electrons after excitation"
+    caption: "Generated distribution of electrons after excitation - two energy levels and preffered horizontal direction"
     relative: false
 ---
 
@@ -19,7 +19,7 @@ Useful articles:
 <li> Tpx3 camera: <a href="https://pubs.aip.org/aip/rsi/article/88/11/113104/989932/Coincidence-velocity-map-imaging-using-Tpx3Cam-a"> Coincidence velocity map imaging using Tpx3Cam</a>
 </ul>
 
-## Analysis of data from TPX3 camera
+## Analysis of data from Tpx3 camera
 
 ### Profile in time
 
