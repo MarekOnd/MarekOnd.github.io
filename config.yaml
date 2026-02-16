@@ -176,6 +176,8 @@ goldmark:
     unsafe: true
     attribute:
       block: true
+  extensions:
+    footnote: true
 tableOfContents:
   endLevel: 5
   ordered: false
