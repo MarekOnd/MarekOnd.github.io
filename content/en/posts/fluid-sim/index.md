@@ -1,11 +1,11 @@
 ---
 title: "Fluid simulation using LBM"
 date: 2026-02-16T18:19:08+01:00
-draft: true
+draft: false
 cover:
     image: "streamlines-desaturated.png"
     alt: ""
-    caption: "Streamlines from a simulation of flow around a cylinder in a 3D channel."
+    caption: "Streamlines from a simulation of flow around a cylinder in a 3D channel. Simulation performed in TNL-LBM and streamlines generated in paraview."
     relative: false
 ---
 
@@ -53,22 +53,35 @@ $$
 f_i(\vec{x},0) = f_i^{\mathrm{eq}}(1,\vec{0})
 $$
 1. compute macroscopic variables $\rho$ and $\vec{u}$ at each lattice site in $\mathcal{X}_1$ $\rightarrow$ output them when needed
-2. evaluate this expression at $\mathcal{X}_1$
+2. **Collision** evaluate this expression at $\mathcal{X}_1$
 $$
 f_i(\vec{x},t)  = \left(1-\frac{1}{\tau}\right)f_i(\vec{x},t)  + \frac{1}{\tau} f_i^{\mathrm{eq}}(\rho,\vec{u})
 $$
-3. set $f_i(\vec{x}+\vec{c}_i,t+1)$ from $\mathcal{X}_2$ to modified $f_i(\vec{x},t)$ from $\mathcal{X}_1$
+3. **Streaming** set $f_i(\vec{x}+\vec{c}_i,t+1)$ from $\mathcal{X}_2$ to modified $f_i(\vec{x},t)$ from $\mathcal{X}_1$
 4. apply boundary conditions
 5. swap $\mathcal{X}_1 \leftrightarrow \mathcal{X}_2$ and go to step 1
 
+Some lattice sites at the edges have to be reserved for boundary conditions which can be implemented as:
 Simplest boundary conditions are:
-- periodic
-- wall
-- inflow
-- outflow
+
+- periodic - perform modulo operations on lattice indices
+- wall - **full-way bounce-back** - swap $f_i$ and $f_j$ when $\vec{c}_j = - \vec{c}_i$ (*flip distribution function*)
+- inflow - set equilibrium with a given inflow velocity and active density
+- outflow - get unknown distributions from the closest lattice site, normalize to density 1 for pressure boundary condition[^pressure] $f_i \leftarrow \frac{f_i}{\sum_i f_i}$
+
+## Example implemenetation
+
+Here is [my ShaderToy implementation of the an equilibrium LBM](https://www.shadertoy.com/view/wcGBzw) which takes $\tau = 1$ which means that relaxation is ideal and distribution function reaches equilibrium after one iteration. This makes it easier to implement in a shader where one is constrained by amount of channels.
+
+An implementation used to run the simulation for the preview is the [TNL-LBM](https://github.com/TNL-Project/TNL-LBM#).
+
+## Additional renders
+
+<img src="streamlines-colored.png">
+<img src="streamlines-colored-domain.png">
 
 ## References
 
 [^theory]: there is actually much more math theory in this, see: [^kruger] and [On the convergence of certain Gauss-type quadrature formulas for unbounded intervals](http://nalag.cs.kuleuven.be/papers/ade/gauss/index.html)
 [^kruger]: [The lattice Boltzmann Method, Principles and practice, Timm Krüger et al.](https://link.springer.com/book/10.1007/978-3-319-44649-3)
-
+[^pressure]: pressure for weakly compressible fluids is linearly dependent on density
