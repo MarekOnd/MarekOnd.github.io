@@ -15,8 +15,10 @@ I have been working in the area of the lattice Boltzmann method (LBM) for my [ba
 
 ## LBM overview
 
-Consider a model $\mathrm{D}3\mathrm{Q}q$ (dimension and quantity) with discrete velocities $\vec{c}_i \in \mathbb{R}^3$ for $i\in \lbrace 1,2,\ldots,q\rbrace$. 
-This speed model approximates moving particles which would have microscopic velocity from $\mathbb{R}^3$ only on a finite set of velocities. Distribution of particles is denoted by $\vec{f}\in\mathbb{R}^q$ where each component correspond to one of the discrete velocities. Macroscopic variables in case without force can be obtained using equations
+LBM can be used to solve the Navier-Stokes equations to model fluid dynamics. The basic idea of LBM is to model particles and their interactions from a probabilistic view. In LBM, everything happens on a uniform lattice and only certain movements of particles are allowed. 
+
+Consider a velocity set $\mathrm{D}3\mathrm{Q}q$ (D for dimension and Q for quantity) with discrete velocities $\vec{c}_i \in \mathbb{R}^3$ for $i\in \lbrace 1,2,\ldots,q\rbrace$. 
+Distribution of particles is denoted by $\vec{f}\in\mathbb{R}^q$ where each component correspond to one of the discrete velocities. Macroscopic variables in case without force can be obtained using equations
 $$
 \rho(\vec{x},t) = \sum_i f_i(\vec{x},t)
 $$
@@ -71,7 +73,9 @@ Simplest boundary conditions are:
 
 ## Example implemenetation
 
-Here is [my ShaderToy implementation of the an equilibrium LBM](https://www.shadertoy.com/view/wcGBzw) which takes $\tau = 1$ which means that relaxation is ideal and distribution function reaches equilibrium after one iteration. This makes it easier to implement in a shader where one is constrained by amount of channels.
+Here is [my ShaderToy implementation of the equilibrium LBM](https://www.shadertoy.com/view/wcGBzw) which takes $\tau = 1$ which means that relaxation is ideal and distribution function reaches equilibrium after one iteration. This makes it easier to implement in a shader where one is constrained by amount of channels.
+
+Update (May 2026): I created [SRT D2Q9 LBM implementation](https://www.shadertoy.com/view/ffSGR3). Has $\tau = 0.7$ by default and uses multiple buffers to store all components of the discrete distribution function.
 
 An implementation used to run the simulation for the preview is the [TNL-LBM](https://github.com/TNL-Project/TNL-LBM#).
 
