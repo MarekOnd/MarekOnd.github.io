@@ -193,9 +193,9 @@ languages:
   cz:
     contentDir: content/cz
     disabled: false
-    languageCode: cz-CZ
-    languageDirection: ltr
-    languageName: Czech
+    locale: cz-CZ
+    direction: ltr
+    label: Czech
     params:
       subtitle: 
       editPost:
@@ -238,9 +238,9 @@ languages:
   en:
     contentDir: content/en
     disabled: false
-    languageCode: en-GB
-    languageDirection: ltr
-    languageName: English
+    locale: en-GB
+    direction: ltr
+    label: English
     params:
       subtitle: Projects, blog
     title: MarekOnd
