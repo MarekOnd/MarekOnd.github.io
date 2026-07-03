@@ -7,11 +7,11 @@ params:
     showToc: false
 ---
 
-Hi, I am a student at the Faculty of Nuclear Sciences of the Czech Technical University (CTU) in Prague. In my free time I like to work on various projects (just like this one).
+Hi, I am a graduate of the Faculty of Nuclear Sciences of the Czech Technical University (CTU) in Prague. In my free time I like to work on various projects (just like this one).
 
 ## Education
 
-{{<coverline "2024 - now">}}
+{{<coverline "2024 - 2026">}}
 Engineer of Mathematical Engineering <br />
 Diploma thesis: <i>Numerical compressible fluid flow simulation using lattice Boltzmann method</i><br />
 <b><a href="https://www.fjfi.cvut.cz/en/">FNSPE CTU</a></b>

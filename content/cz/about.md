@@ -7,7 +7,7 @@ params:
     showToc: false
 ---
 
-Ahoj, jsem student na FJFI ČVUT. Ve svém volném čase se rád věnuji různorodým projektům (jako je i tento).
+Ahoj, jsem absolvent FJFI ČVUT v Praze. Ve svém volném čase se rád věnuji různým projektům (jako je i tento).
 
 ## Vzdělání
 
